@@ -4,11 +4,9 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
-Flask-RESTful = "*"
 requests = "*"
 pymongo = "*"
 aiohttp = "*"
-lxml = "*"
 
 [dev-packages]
 

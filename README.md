@@ -1,22 +1,31 @@
 # SimpalsTest
+Тестовое задание
+
+## Зависимости
 Все зависимости в `Pipfile`
+
 ## Синхронизация
-USAGE: `pipenv run python sync.py <TOKEN>`
+USAGE: `pipenv run python sync.py`
 
 При запуске, как скрипта, выкачивает все объявления и добавляет (либо заменяет)
 их в базу в бесконечном цикле. По окончании каждой итерации удаляет из 
 базы объявления, которые отсутствуют в списке скачанных объявлений.
+
 ## API
-USAGE: 
+USAGE: `pipenv run python aiohttp_api.py`
 
-`pipenv run python flask_api.py`
+Сервер принимает get-параметры `page` и `page_size` для пагинации.
 
-`pipenv run python aiohttp_api.py`
+Возвращает массив объявлений - `adverts`
 
-Сделал две реализации API.
-Одна на `aiohttp`, другая с использованием модуля `flask-restfull`
+Текущую страницу - `page`
+
+Количество объявлений на странице -`page_size`
+
+Общее количество объявлений в базе - `adverts_count`
+
 ## ElasticSearch
-Для синхронизации с ElasticSearch использовал `mongo-connector`
+Для синхронизации с ElasticSearch использовал `mongo-connector`.
 Тут код писать не пришлось.
 
 Запуск осуществляется командой:

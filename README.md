@@ -1,4 +1,4 @@
-# SimpalsTest
+# TestWork
 Все зависимости в `Pipfile`
 ## Синхронизация
 USAGE: `pipenv run python sync.py <TOKEN>`
